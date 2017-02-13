@@ -33,6 +33,9 @@
                                 <state key="normal" title="TapMe">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOp-bz-wVH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb2-Nt-wnd">
                                 <rect key="frame" x="112" y="436" width="150" height="150"/>
@@ -53,21 +56,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8g-oN-Ou8">
+                                <rect key="frame" x="286" y="43" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pcy-BG-zFQ"/>
+                                    <constraint firstAttribute="width" constant="73" id="bc7-MZ-6lr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7n-nd-8qZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Sb2-Nt-wnd" secondAttribute="trailing" constant="97" id="8an-MJ-uCS"/>
+                            <constraint firstItem="H8g-oN-Ou8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="270" id="M1I-s3-Xlt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="01z-4p-Wcz" secondAttribute="bottom" constant="478" id="NLX-Sj-B1R"/>
                             <constraint firstItem="Sb2-Nt-wnd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="QeQ-5b-1af"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sb2-Nt-wnd" secondAttribute="bottom" constant="81" id="Qld-3W-NAR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="01z-4p-Wcz" secondAttribute="trailing" constant="97" id="ccD-jH-5DX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H8g-oN-Ou8" secondAttribute="bottom" constant="594" id="iZy-Zd-Cqp"/>
                             <constraint firstItem="Sb2-Nt-wnd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="416" id="jUu-VE-rl2"/>
                             <constraint firstItem="01z-4p-Wcz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="kIn-tM-CeK"/>
                             <constraint firstItem="bGb-KO-DU1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t1I-Lb-cAz"/>
                             <constraint firstItem="bGb-KO-DU1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wck-vV-ayS"/>
                             <constraint firstItem="01z-4p-Wcz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="wp4-L5-AHJ"/>
+                            <constraint firstItem="H8g-oN-Ou8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="y4B-50-HM3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Sb2-Nt-wnd" id="hxC-51-pcw"/>
+                        <outlet property="timerLabel" destination="01z-4p-Wcz" id="Bhv-hl-qRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
