@@ -54,7 +54,11 @@ class ViewController: UIViewController {
             timer?.invalidate()
             let alert = UIAlertController(title: "Time's Up!", message: "You scored \(count) points", preferredStyle: UIAlertControllerStyle.alert)
             
-            alert.addAction(UIAlertAction(title: "Play Again", style: UIAlertActionStyle.default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Play Again", style: UIAlertActionStyle.default, handler: { (alert:UIAlertAction) -> Void in
+            
+                self.setupGame()
+            
+            }))
             
             self.present(alert, animated: true, completion: nil)
             
