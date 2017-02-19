@@ -18,6 +18,10 @@
 		7BB717271E514938009D2EF8 /* TapMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB717261E514938009D2EF8 /* TapMeUITests.swift */; };
 		7BFB3CEE1E5A3519006A7C1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB3CED1E5A3519006A7C1F /* LoginViewController.swift */; };
 		7BFB3CF01E5A3B56006A7C1F /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB3CEF1E5A3B56006A7C1F /* UIImage+Gif.swift */; };
+		7BFB3CF71E5A3F6C006A7C1F /* colorBlend.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CF21E5A3F6C006A7C1F /* colorBlend.gif */; };
+		7BFB3CF81E5A3F6C006A7C1F /* colorSpin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CF31E5A3F6C006A7C1F /* colorSpin.gif */; };
+		7BFB3CFA1E5A3F6C006A7C1F /* spinCycle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CF51E5A3F6C006A7C1F /* spinCycle.gif */; };
+		7BFB3CFD1E5A4102006A7C1F /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CFC1E5A4102006A7C1F /* fire.gif */; };
 		EC2E5DE4152F5360334BB39C /* Pods_TapMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1F78224F35ADE6583ACB70 /* Pods_TapMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,10 @@
 		7BB717281E514938009D2EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFB3CED1E5A3519006A7C1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7BFB3CEF1E5A3B56006A7C1F /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "../../../../Roast/Roast/UIImage+Gif.swift"; sourceTree = "<group>"; };
+		7BFB3CF21E5A3F6C006A7C1F /* colorBlend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = colorBlend.gif; path = ../../../../../../Photos/Gifs/colorBlend.gif; sourceTree = "<group>"; };
+		7BFB3CF31E5A3F6C006A7C1F /* colorSpin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = colorSpin.gif; path = ../../../../../../Photos/Gifs/colorSpin.gif; sourceTree = "<group>"; };
+		7BFB3CF51E5A3F6C006A7C1F /* spinCycle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = spinCycle.gif; path = ../../../../../../Photos/Gifs/spinCycle.gif; sourceTree = "<group>"; };
+		7BFB3CFC1E5A4102006A7C1F /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../../../../Photos/Gifs/fire.gif; sourceTree = "<group>"; };
 		8A1F78224F35ADE6583ACB70 /* Pods_TapMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C667C68F2DB95C07ADAD0CE6 /* Pods-TapMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapMeTests/Pods-TapMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C885FB6C41B9A49509880C08 /* Pods_TapMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +134,7 @@
 				7BB7170D1E514938009D2EF8 /* Assets.xcassets */,
 				7BB7170F1E514938009D2EF8 /* LaunchScreen.storyboard */,
 				7BB717121E514938009D2EF8 /* Info.plist */,
+				7BFB3CF11E5A3F48006A7C1F /* gif */,
 			);
 			path = TapMe;
 			sourceTree = "<group>";
@@ -146,6 +155,17 @@
 				7BB717281E514938009D2EF8 /* Info.plist */,
 			);
 			path = TapMeUITests;
+			sourceTree = "<group>";
+		};
+		7BFB3CF11E5A3F48006A7C1F /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				7BFB3CFC1E5A4102006A7C1F /* fire.gif */,
+				7BFB3CF21E5A3F6C006A7C1F /* colorBlend.gif */,
+				7BFB3CF31E5A3F6C006A7C1F /* colorSpin.gif */,
+				7BFB3CF51E5A3F6C006A7C1F /* spinCycle.gif */,
+			);
+			name = gif;
 			sourceTree = "<group>";
 		};
 		902ABE269E2098864458C2DB /* Frameworks */ = {
@@ -289,8 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFB3CF81E5A3F6C006A7C1F /* colorSpin.gif in Resources */,
 				7BB717111E514938009D2EF8 /* LaunchScreen.storyboard in Resources */,
 				7BB7170E1E514938009D2EF8 /* Assets.xcassets in Resources */,
+				7BFB3CFA1E5A3F6C006A7C1F /* spinCycle.gif in Resources */,
+				7BFB3CF71E5A3F6C006A7C1F /* colorBlend.gif in Resources */,
+				7BFB3CFD1E5A4102006A7C1F /* fire.gif in Resources */,
 				7BB7170C1E514938009D2EF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

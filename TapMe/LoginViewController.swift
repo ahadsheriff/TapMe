@@ -11,10 +11,20 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var gifView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        // Returns an animated UIImage
+        let fireGif = UIImage.gifWithName(name: "fire")
+        // Use the UIImage in your UIImageView
+        _ = UIImageView(image: fireGif)
+        
+        self.gifView?.image = fireGif
+        
     }
 
     override func didReceiveMemoryWarning() {
