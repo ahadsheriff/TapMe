@@ -25,7 +25,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGb-KO-DU1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
-                                <color key="backgroundColor" red="0.95584839580000003" green="0.0" blue="0.13467238840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.01762105525" green="0.62861287590000003" blue="0.96095961330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="586" id="3s7-RJ-06Y"/>
                                     <constraint firstAttribute="width" constant="375" id="GZZ-la-Gy8"/>
@@ -45,6 +45,7 @@
                                     <constraint firstAttribute="width" constant="150" id="Za3-vS-uGH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01z-4p-Wcz">
@@ -54,7 +55,7 @@
                                     <constraint firstAttribute="width" constant="150" id="OiH-nU-bAZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8g-oN-Ou8">
@@ -66,14 +67,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Restart">
-                                    <color key="titleColor" red="0.95584839580000003" green="0.0" blue="0.13467238840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="restartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7n-nd-8qZ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.95584839580000003" green="0.0" blue="0.13467238840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.01762105525" green="0.62861287590000003" blue="0.96095961330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Sb2-Nt-wnd" secondAttribute="trailing" constant="97" id="8an-MJ-uCS"/>
                             <constraint firstItem="H8g-oN-Ou8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="M1I-s3-Xlt"/>
@@ -121,7 +122,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Play">
-                                    <color key="titleColor" red="0.97553718089999997" green="0.1447792202" blue="0.17588457469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -139,7 +140,7 @@
                                     <constraint firstAttribute="width" constant="197" id="z7Y-k9-WFw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the screen as many times as you can in 30 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vD-Lw-gnS">
@@ -151,7 +152,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="351" id="eBn-d7-i8V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
-                                <color key="textColor" red="0.90588235289999997" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k2e-Sd-uid">
@@ -163,7 +164,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95584839580000003" green="0.0" blue="0.13467238840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.01762105525" green="0.62861287590000003" blue="0.96095961330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="k2e-Sd-uid" firstAttribute="top" secondItem="6vD-Lw-gnS" secondAttribute="bottom" constant="77" id="6s2-df-OWu"/>
                             <constraint firstItem="FX8-g9-iBa" firstAttribute="top" secondItem="9Tr-mk-QS1" secondAttribute="bottom" constant="536" id="9rS-BL-3hM"/>

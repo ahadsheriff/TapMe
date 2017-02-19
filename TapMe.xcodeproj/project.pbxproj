@@ -22,6 +22,9 @@
 		7BFB3CF81E5A3F6C006A7C1F /* colorSpin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CF31E5A3F6C006A7C1F /* colorSpin.gif */; };
 		7BFB3CFA1E5A3F6C006A7C1F /* spinCycle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CF51E5A3F6C006A7C1F /* spinCycle.gif */; };
 		7BFB3CFD1E5A4102006A7C1F /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CFC1E5A4102006A7C1F /* fire.gif */; };
+		7BFB3CFF1E5A5C85006A7C1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CFE1E5A5C85006A7C1F /* GoogleService-Info.plist */; };
+		7BFB3D001E5A5C85006A7C1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CFE1E5A5C85006A7C1F /* GoogleService-Info.plist */; };
+		7BFB3D011E5A5C85006A7C1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFB3CFE1E5A5C85006A7C1F /* GoogleService-Info.plist */; };
 		EC2E5DE4152F5360334BB39C /* Pods_TapMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1F78224F35ADE6583ACB70 /* Pods_TapMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,7 @@
 		7BFB3CF31E5A3F6C006A7C1F /* colorSpin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = colorSpin.gif; path = ../../../../../../Photos/Gifs/colorSpin.gif; sourceTree = "<group>"; };
 		7BFB3CF51E5A3F6C006A7C1F /* spinCycle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = spinCycle.gif; path = ../../../../../../Photos/Gifs/spinCycle.gif; sourceTree = "<group>"; };
 		7BFB3CFC1E5A4102006A7C1F /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fire.gif; path = ../../../../../../Photos/Gifs/fire.gif; sourceTree = "<group>"; };
+		7BFB3CFE1E5A5C85006A7C1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A1F78224F35ADE6583ACB70 /* Pods_TapMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C667C68F2DB95C07ADAD0CE6 /* Pods-TapMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapMeTests/Pods-TapMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C885FB6C41B9A49509880C08 /* Pods_TapMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +138,7 @@
 				7BB7170D1E514938009D2EF8 /* Assets.xcassets */,
 				7BB7170F1E514938009D2EF8 /* LaunchScreen.storyboard */,
 				7BB717121E514938009D2EF8 /* Info.plist */,
+				7BFB3CFE1E5A5C85006A7C1F /* GoogleService-Info.plist */,
 				7BFB3CF11E5A3F48006A7C1F /* gif */,
 			);
 			path = TapMe;
@@ -310,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BFB3CF81E5A3F6C006A7C1F /* colorSpin.gif in Resources */,
+				7BFB3CFF1E5A5C85006A7C1F /* GoogleService-Info.plist in Resources */,
 				7BB717111E514938009D2EF8 /* LaunchScreen.storyboard in Resources */,
 				7BB7170E1E514938009D2EF8 /* Assets.xcassets in Resources */,
 				7BFB3CFA1E5A3F6C006A7C1F /* spinCycle.gif in Resources */,
@@ -323,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFB3D001E5A5C85006A7C1F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFB3D011E5A5C85006A7C1F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
