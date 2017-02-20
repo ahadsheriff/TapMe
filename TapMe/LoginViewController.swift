@@ -13,10 +13,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var ref: FIRDatabaseReference! // 1
     var userID: String = ""
+    var username: String = ""
 
 
     @IBOutlet weak var gifView: UIImageView!
-    
     @IBOutlet weak var textBox: UITextField!
     
     
@@ -52,9 +52,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func loginDidTouch(_ sender: Any) {
+        self.username = self.textBox.text!
         FIRAuth.auth()?.signInAnonymously() { (user, error) in
             if let user = user {
                 print("User is signed in with uid: ", user.uid)
+                print("Username: ", self.username)
                 self.userID = user.uid
                 // Answers.logCustomEvent(withName: "Signed in", customAttributes: nil)
             } else {
