@@ -10,6 +10,10 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
+    
+    var ref: FIRDatabaseReference! // 1
+    var userID: String = ""
+
 
     @IBOutlet weak var gifView: UIImageView!
     
@@ -45,6 +49,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true;
     }
+    
+    
+    @IBAction func loginDidTouch(_ sender: Any) {
+        FIRAuth.auth()?.signInAnonymously() { (user, error) in
+            if let user = user {
+                print("User is signed in with uid: ", user.uid)
+                self.userID = user.uid
+                // Answers.logCustomEvent(withName: "Signed in", customAttributes: nil)
+            } else {
+                print("No user is signed in.")
+            }
+            self.performSegue(withIdentifier: "LoginToPlay", sender: nil)
+        }
+
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

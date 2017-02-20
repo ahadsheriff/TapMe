@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var count: Int = 0
     var seconds: Int = 0
     var timer: Timer?
+    var usersname: String = ""
     
     
     override func viewDidLoad() {
