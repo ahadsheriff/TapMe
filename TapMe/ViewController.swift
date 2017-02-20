@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
     var count: Int = 0
     var seconds: Int = 0
     var timer: Timer?
-    var usersname: String = ""
+    var uid: String = ""
+    let username = mainInstance.name
+    
+    var highScore: Int = 0
+    
+    var rootRef = FIRDatabase.database().reference()
+    var scoreRef: FIRDatabaseReference!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.setupGame()
+        
+        // Firebase reference
+        scoreRef = rootRef.child("High Score")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +69,16 @@ class ViewController: UIViewController {
             
             alert.addAction(UIAlertAction(title: "Play Again", style: UIAlertActionStyle.default, handler: { (alert:UIAlertAction) -> Void in
             
+                /*
+                let itemRef = self.scoreRef.childByAutoId()
+                let scoreItem = [
+                    "username": self.usersname,
+                    "highscore": self.highScore
+                ]
+                
+                itemRef.setValue(scoreItem)
+ */
+                
                 self.setupGame()
             
             }))
@@ -68,6 +90,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restartPressed(_ sender: Any) {
+        print("Global username: ", self.username)
         timer?.invalidate()
         self.viewDidLoad()
     }

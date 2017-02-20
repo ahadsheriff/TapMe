@@ -23,20 +23,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        /*
-        // Returns an animated UIImage
-        let fireGif = UIImage.gifWithName(name: "fire")
-        // Use the UIImage in your UIImageView
-        _ = UIImageView(image: fireGif)
-        self.gifView?.image = fireGif
-        */
-        
+
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
         self.textBox.delegate = self
         
+    }
+    
+    @IBAction func loginDidTouch(_ sender: Any) {
+        FIRAuth.auth()?.signInAnonymously() { (user, error) in
+            if let user = user {
+                self.username = self.textBox.text!
+                print("User is signed in with uid: ", user.uid)
+                print("Username: ", self.username)
+                
+                let mainInstance = Main(name: self.username)
+                print("Global Username: ", mainInstance.name)
+                
+                self.userID = user.uid
+                // Answers.logCustomEvent(withName: "Signed in", customAttributes: nil)
+            } else {
+                print("No user is signed in.")
+            }
+            self.performSegue(withIdentifier: "LoginToPlay", sender: nil)
+        }
+
     }
     
     func dismissKeyboard() {
@@ -48,23 +60,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     {
         textField.resignFirstResponder()
         return true;
-    }
-    
-    
-    @IBAction func loginDidTouch(_ sender: Any) {
-        self.username = self.textBox.text!
-        FIRAuth.auth()?.signInAnonymously() { (user, error) in
-            if let user = user {
-                print("User is signed in with uid: ", user.uid)
-                print("Username: ", self.username)
-                self.userID = user.uid
-                // Answers.logCustomEvent(withName: "Signed in", customAttributes: nil)
-            } else {
-                print("No user is signed in.")
-            }
-            self.performSegue(withIdentifier: "LoginToPlay", sender: nil)
-        }
-
     }
     
     
